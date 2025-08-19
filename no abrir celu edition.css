@@ -1,0 +1,416 @@
+@media (max-width: 549px) {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Página 1 */
+  div#ola {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background: linear-gradient(135deg, #dc6edc, #62bece);
+    padding: 20px;
+  }
+
+  .landing {
+    background: #ffffff;
+    width: 95%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .landing h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: "Lavishly Yours", cursive;
+  }
+
+  a.boton {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    background: #97338a;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    width: 80%;
+  }
+
+  a.boton:hover {
+    background: #37122c;
+    transform: scale(1.05);
+  }
+
+  /* Página 2 */
+  .landing2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #d6afff;
+    font-family: Arial, sans-serif;
+  }
+
+  .landing2-header {
+    flex-direction: column;
+    text-align: center;
+    background: #8e5cc4;
+    padding: 15px;
+  }
+
+  .landing2-logo img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .landing2-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing2-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+
+  .landing2-nav a:hover {
+    color: #e0c7ff;
+  }
+
+  .landing2-main {
+    padding: 20px;
+  }
+
+  .landing2-main h1 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+    color: rgb(255, 237, 237);
+    padding-top: 20%;
+      font-family: cursive;
+      padding-top: 2%;
+      border: #000 solid 1px;
+    background-color: #8e5cc4;
+  
+  }
+
+  .landing2-main p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding: 10%;
+ background-color: #8e5cc4;
+ 
+       border: #000 solid 1px;
+       font-family: 'Times New Roman', Times, serif;
+  
+  }
+
+  .landing2-footer {
+    
+    padding: 15px;
+    text-align: center;
+    padding-right: 2%;
+    
+  }
+
+  .landing2-redes img {
+    height: 40px;
+    width: 40px;
+    transition: transform 0.3s;
+    border: 2px solid rgb(176, 145, 10);
+    border-radius: 5px;
+    background-color: rgb(253, 228, 117);
+    margin: 10px;
+    
+  }
+
+  .landing2-redes img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Página 3 */
+  .landing3 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F5E7D6;
+    font-family: Arial, sans-serif;
+  }
+
+  .landing3-header {
+    flex-direction: column;
+    text-align: center;
+    background: #F5E7D6;
+    padding: 15px;
+  }
+
+  .landing3-logo img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .landing3-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing3-nav a {
+    color: #8B4513;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .landing3-nav a:hover {
+    color: #ffffff;
+  }
+
+  .landing3-main {
+    padding: 20px;
+  }
+
+  .landing3-main h2 {
+    font-size: 1.5rem;
+    color: #A0522D;
+    margin-bottom: 10px;
+    padding-top: 10%;
+    font-family: cursive;
+  }
+
+  .landing3-main p {
+    font-size: 1.2rem;
+    color: #8B4513;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .landing3-footer {
+    background: #F5E7D6;
+    padding: 15px;
+    text-align: center;
+     padding-right: 2%;
+     
+  }
+
+  .landing3-redes img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(84, 66, 1);
+    border-radius: 5px;
+    background-color: rgb(200, 128, 81);
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+
+  .landing3-redes img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Página 5 - Galería */
+  .landing5 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #fff;
+  }
+
+  .landing5-header {
+    flex-direction: column;
+    text-align: center;
+    background: #9cd8f2;
+    padding: 15px;
+  }
+
+  .landing5-logo img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .landing5-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing5-nav a {
+    color: rgb(2, 31, 29);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .landing5-nav a:hover {
+    color: #ffffff;
+  }
+
+  .galeria3 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .galeria3-header h1 {
+    font-size: 1.5rem;
+    color: #5a4635;
+    font-family: cursive;
+  }
+
+  .galeria3-header p {
+    font-size: 0.9rem;
+    color: #6e5c4b;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .galeria3-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .galeria3-item {
+    background: rgba(213, 240, 244, 0.9);
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .galeria3-item img,
+  .galeria3-item video {
+    width: 100%;
+    border: 1px solid #b79c7d;
+    border-radius: 8px;
+  }
+
+  .galeria3-fecha {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #5a4635;
+  }
+
+  .landing5-footer {
+    background: #9cd8f2;
+    padding: 15px;
+    text-align: center;
+     padding-right: 2%;
+  }
+
+  .landing5-redes img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(32, 76, 104);
+    border-radius: 5px;
+    background-color: rgb(218, 250, 255);
+    margin: 10px;
+    transition: transform 0.3s;
+    
+  }
+
+  .landing5-redes img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Página 6 */
+  .landing6 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #aadc81;
+  }
+
+  .landing6-header {
+    flex-direction: column;
+    text-align: center;
+    background: #1aa64b;
+    padding: 15px;
+  }
+
+  .landing6-logo img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .landing6-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .landing6-nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .landing6-nav a:hover {
+    color: #000;
+  }
+
+  .landing6-main {
+    padding: 20px;
+  }
+
+  .landing6-main h1 {
+    font-size: 2rem;
+    color: #1c1b1a;
+    padding-top: 10%;
+  }
+
+   div#jjj h1 {
+    font-size: 2rem;
+    color: #1c1b1a;
+    padding-top: 2%;
+  }
+
+  .landing6-main h2 {
+    font-size: 1.5rem;
+    color: #5a5a5a;
+  }
+
+  .landing6-main p {
+    font-size: 1rem;
+    color: #8B4513;
+  }
+
+  div#xdd h1 {
+    font-size: 2rem;
+    color: #aadc81;
+    font-family: cursive;
+  }
+
+  .landing6-footer {
+    background: #1aa64b;
+    padding: 15px;
+    text-align: center;
+     padding-right: 2%;
+  }
+
+  .landing6-redes img {
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(66, 65, 65);
+    border-radius: 5px;
+    background-color: rgb(179, 213, 115);
+    margin: 10px;
+    transition: transform 0.3s;
+  }
+
+  .landing6-redes img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Título extra */
+  div#jjj h1 {
+    color: white;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA</title>
+    <link rel="stylesheet" href="no abrir2.css">
+    <link rel="stylesheet" href="no abrir celu edition.css">
+    
+</head>
+<body>
+
+    
+ <section class="landing5">
+ 
+  <div class="landing5-header">
+    <div class="landing5-logo">
+      <img src="nooo/logo.png" alt="Logo" />
+    </div>
+    <nav class="landing5-nav">
+      <a href="no abrir3.html">Inicio</a>
+      <a href="no abrir 4.html">Diario</a>
+      <a href="#">Galería</a>
+      <a href="no abrir 6.html">Futuro</a>
+    </nav>
+  </div>
+
+ 
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Nostálgica</title>
+    <link rel="stylesheet" href="no abrir4.css">
+</head>
+<body>
+<section class="galeria3">
+    <header class="galeria3-header">
+       
+    </header>
+
+   
+     <div id="jijaja">
+    <div class="galeria3-grid">
+
+      
+
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 4.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 21-06-2025</p>
+        </div>
+ 
+
+    
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 2.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 21-06-2025</p>
+        </div>
+
+     
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 3.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 21-06-2025</p>
+        </div>
+
+        
+
+       
+
+      
+        <div class="galeria3-item">
+            <img src="nooo/imagen 5.jpeg" alt="Recuerdo 1">
+            <p class="galeria3-fecha">FOTO <br>📅 30-07-2025</p>
+        </div>
+
+     
+        <div class="galeria3-item">
+            <img src="nooo/imagen 6.jpEG" alt="Recuerdo 2">
+            <p class="galeria3-fecha">FOTO <br>📅 02-08-2025</p>
+        </div>
+
+      
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 7.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 02-08-2025</p>
+        </div>
+
+       
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 8.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 02-08-2025</p>
+        </div>
+
+        
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 9.mp4" type="video/mp4">
+            </video>
+            <p class="galeria3-fecha">📅 09-08-2025</p>
+        </div>
+
+          
+        <div class="galeria3-item">
+            <video controls>
+                <source src="nooo/video 10.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <p class="galeria3-fecha">📅 09-08-2025</p>
+        </div>
+
+    </div>
+    </div>
+</section>
+</body>
+</html>
+
+  <div class="landing5-footer">
+    <div class="landing5-redes">
+      <a href="https://www.instagram.com/alvarou__u?igsh=ODE5Z3FkOHVrc3Zq"><img src="nooo/miig.png" alt="igg"></a>
+        
+    <img id="playPauseBtn" src="nooo/centro.webp" alt="Play/Pause" />
+
+    <script>
+        const playPauseBtn = document.getElementById('playPauseBtn');
+
+      
+        const playlist = [
+            "nooo/Lost in You.mp3",
+            "nooo/summertime.mp3",
+             "nooo/world is ugly.mp3",
+             "nooo/Goo Goo Dolls - Iris.mp3",
+            "nooo/Give Me Your Name.mp3"
+        ];
+
+        let currentSongIndex = 0;
+        let audio = new Audio();
+        let isPlaying = false;
+
+       
+        function playCurrentSong() {
+            audio.src = playlist[currentSongIndex];
+            audio.play();
+            isPlaying = true;
+            updateButtonImage();
+        }
+
+    
+        function updateButtonImage() {
+            if (isPlaying) {
+                playPauseBtn.src = "nooo/centro.WEBP"; 
+            } else {
+                playPauseBtn.src = "nooo/pausa.WEBP"; 
+            }
+        }
+
+      
+        audio.addEventListener('ended', () => {
+            currentSongIndex++;
+            if (currentSongIndex >= playlist.length) {
+                currentSongIndex = 0; 
+            }
+            playCurrentSong();
+        });
+
+       
+        playPauseBtn.addEventListener('click', () => {
+            if (!isPlaying) {
+              
+                if (!audio.src) {
+                   
+                    playCurrentSong();
+                } else {
+                    audio.play();
+                    isPlaying = true;
+                    updateButtonImage();
+                }
+            } else {
+               
+                audio.pause();
+                isPlaying = false;
+                updateButtonImage();
+            }
+        });
+
+    </script>
+      <a href="https://www.instagram.com/i.skcb?igsh=MWs1aWN5N2JhYzhmNg=="><img src="nooo/tuig.png" alt="Instagram"></a>
+     
+    </div>
+  </div>
+</section>
+
+    
+</body>
+</html>

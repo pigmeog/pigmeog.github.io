@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTURO [PROVICIONAL]</title>
+    <link rel="stylesheet" href="no abrir2.css">
+    <link rel="stylesheet" href="no abrir celu edition.css">
+</head>
+<body>
+ <section class="landing6">
+  
+  <div class="landing6-header">
+    <div class="landing6-logo">
+      <img src="nooo/logo.png" alt="Logo" />
+    </div>
+    <nav class="landing6-nav">
+      <a href="no abrir3.html">Inicio</a>
+      <a href="no abrir 4.html">Diario</a>
+      <a href="no abrir 5.html">Galería</a>
+      <a href="#">Futuro</a>
+    </nav>
+  </div>
+<div id="cuerpo">
+  <div class="landing6-main">
+  <div id="jjj">  <h1>Esta pestaña es provicional, mientras te dejo esto que no es tan interesante. <br>  es más feito :D <br> Motivo: falta de conocimiento</h1></div>
+    <h1>[Cosas que me gustaría hacer contigo]</h1>
+         <h2>-Hacer un picnic en un parque bonito.</h2>
+          <h2>-Acampar bajo las estrellas.</h2>
+             <h2>-Visitar otros lugares.</h2>
+            <h2>-Estudiar o aprender algo juntos.</h2>
+              <h2>-Madrugar juntos.</h2>
+                <h2>-Yoga?.</h2>
+                 <h2>-Hacer una cena (sin saber qué vamos a comer).</h2>
+                  <h2>-Explorar el mundo.</h2>
+                   <h2>-Amanecer juntos.</h2>
+                    <h2>-Recordar y reflexionar juntos</h2>
+                      <h2>-Tomar fotografías.</h2> 
+                  
+         <h2>-Cocinar [yo mirarte cocinar ] cualquier cosa.</h2>
+           <h2>-Comer cualquier cosa preparada por ti.</h2>
+             <h2>-Visitar cualquier lugar natural.</h2>
+               <h2>-Cumplir 1 año. :D</h2>
+                
+                  
+                  
+                   <h2>-Dormir juntos.</h2>
+                   <h2>-Dibujar.</h2>
+                 
+                   <h2>-Grabar un cortometraje juntos.</h2>
+                   <h2>-Subir un cerro.</h2>
+                   <h2>-Ver un amanecer.</h2>
+                     <h2>-Ver un atardecer.</h2>
+                   <h2>-Nadar.</h2>
+                   <h2>-Jugar juegos de mesa.</h2>
+
+                   <h2>-Hacer aseo juntos.</h2>
+                     <h2>-Probar comida nueva.</h2>
+                    <h2>-Practicar actividad física juntos.</h2>
+                    <h2>-Tener un gatito.</h2>
+                 
+                    <h2>-etc, próximamente más...</h2>
+                         <div id="xdd">
+                        <h1>LEE LA PRIMERA LETRA DE TODAS LAS QUE ESTÁN SOBRE ESTE TEXTO</h1>
+                    </div>
+
+                 
+
+
+</div>
+
+
+                   
+   
+    
+
+
+
+
+  </div>
+
+  
+  </div>
+
+ 
+  <div class="landing6-footer">
+    <div class="landing6-redes">
+      <a href="https://www.instagram.com/alvarou__u?igsh=ODE5Z3FkOHVrc3Zq"><img src="nooo/miig.png" alt="igg"></a>
+     
+
+
+ 
+    <img id="playPauseBtn" src="nooo/centro.webp" alt="Play/Pause" />
+
+    <script>
+        const playPauseBtn = document.getElementById('playPauseBtn');
+
+     
+        const playlist = [
+             "nooo/Goo Goo Dolls - Iris.mp3",
+            "nooo/summertime.mp3",
+            "nooo/Give Me Your Name.mp3",
+            "nooo/Lost in You.mp3"
+        ];
+
+        let currentSongIndex = 0;
+        let audio = new Audio();
+        let isPlaying = false;
+
+     
+        function playCurrentSong() {
+            audio.src = playlist[currentSongIndex];
+            audio.play();
+            isPlaying = true;
+            updateButtonImage();
+        }
+
+     
+        function updateButtonImage() {
+            if (isPlaying) {
+                playPauseBtn.src = "nooo/centro.WEBP"; 
+            } else {
+                playPauseBtn.src = "nooo/pausa.WEBP"; 
+            }
+        }
+
+      
+        audio.addEventListener('ended', () => {
+            currentSongIndex++;
+            if (currentSongIndex >= playlist.length) {
+                currentSongIndex = 0; 
+            }
+            playCurrentSong();
+        });
+
+      
+        playPauseBtn.addEventListener('click', () => {
+            if (!isPlaying) {
+               
+                if (!audio.src) {
+                 
+                    playCurrentSong();
+                } else {
+                    audio.play();
+                    isPlaying = true;
+                    updateButtonImage();
+                }
+            } else {
+           
+                audio.pause();
+                isPlaying = false;
+                updateButtonImage();
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+      <a href="https://www.instagram.com/i.skcb?igsh=MWs1aWN5N2JhYzhmNg=="><img src="nooo/tuig.png" alt="Instagram"></a>
+     
+    </div>
+  </div>
+</section>
+
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="no abrir2.css">
+    <link rel="stylesheet" href="no abrir celu edition.css">
+</head>
+<body>
+ <section class="landing2">
+ 
+  <div class="landing2-header">
+    <div class="landing2-logo">
+      <img src="nooo/logo.png" alt="Logo" />
+    </div>
+    <nav class="landing2-nav">
+      <a href="#">Inicio</a>
+      <a href="no abrir 4.html">Diario</a>
+      <a href="no abrir 5.html">Galería</a>
+      <a href="no abrir 6.html">Futuro</a>
+    </nav>
+  </div>
+
+
+  <div class="landing2-main">
+    <h1>Bienvenida a nuestra pagina</h1>
+    <p>El objetivo principal de esto, es ir recopilando recuerdos de nuestras aventuras. <br>
+      te hare llegar actualizada esta pagina cada mesiversario.
+    </p>
+  </div>
+
+
+  <div class="landing2-footer">
+    <div class="landing2-redes">
+      <a href="https://www.instagram.com/alvarou__u?igsh=ODE5Z3FkOHVrc3Zq"><img src="nooo/miig.png" alt="igg"></a>
+ 
+    <img id="playPauseBtn" src="nooo/centro.webp" alt="Play/Pause" />
+
+    <script>
+        const playPauseBtn = document.getElementById('playPauseBtn');
+
+      
+        const playlist = [
+           "nooo/world is ugly.mp3",
+            "nooo/Give Me Your Name.mp3",
+            "nooo/Lost in You.mp3",
+            "nooo/summertime.mp3",
+             "nooo/Goo Goo Dolls - Iris.mp3",
+            
+        ];
+
+        let currentSongIndex = 0;
+        let audio = new Audio();
+        let isPlaying = false;
+
+        
+        function playCurrentSong() {
+            audio.src = playlist[currentSongIndex];
+            audio.play();
+            isPlaying = true;
+            updateButtonImage();
+        }
+
+      
+        function updateButtonImage() {
+            if (isPlaying) {
+                playPauseBtn.src = "nooo/centro.WEBP"; 
+            } else {
+                playPauseBtn.src = "nooo/pausa.WEBP"; 
+            }
+        }
+
+      
+        audio.addEventListener('ended', () => {
+            currentSongIndex++;
+            if (currentSongIndex >= playlist.length) {
+                currentSongIndex = 0; 
+            }
+            playCurrentSong();
+        });
+
+      
+        playPauseBtn.addEventListener('click', () => {
+            if (!isPlaying) {
+              
+                if (!audio.src) {
+                    
+                    playCurrentSong();
+                } else {
+                    audio.play();
+                    isPlaying = true;
+                    updateButtonImage();
+                }
+            } else {
+              
+                audio.pause();
+                isPlaying = false;
+                updateButtonImage();
+            }
+        });
+
+    </script>
+
+
+
+      <a href="https://www.instagram.com/i.skcb?igsh=MWs1aWN5N2JhYzhmNg=="><img src="nooo/tuig.png" alt="Instagram"></a>
+     
+    </div>
+  </div>
+</section>
+
+    
+</body>
+</html>
